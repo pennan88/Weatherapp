@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherToday</title>
     <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,7 +21,6 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Weather</a></li>
-                <li><a href="#">Tickets</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
 
@@ -30,6 +30,30 @@
     <main>
         <div class="main-container">
 
+            <div class="search-container">
+                <div class="forms">
+                    <form action="">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="choices">
+                    <label class="container">Only weather
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Only attractions
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Fliter alphabetically
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
