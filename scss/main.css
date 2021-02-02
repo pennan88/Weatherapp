@@ -1,11 +1,114 @@
-*, *::after, *::before {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
 }
 
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 header {
   width: 100%;
-  height: 100px;
-  border: 1px black solid;
+  height: 10vh;
+  background-color: #104581;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .head-container {
+  height: 6vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .head-container .logo {
+  position: absolute;
+}
+
+header .nav {
+  width: 100%;
+  height: 4vh;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .nav li {
+  display: inline;
+}
+
+header .nav li a {
+  padding: 5px 10px;
+  color: #fff;
+  margin-top: 10px;
+  background: #1c79e3;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 40%;
+  border: 1px solid #1c79e3;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.4s background-color;
+  transition: 0.4s background-color;
+}
+
+header .nav li a:hover {
+  background: #1458a5;
+  border-color: #1458a5;
+}
+
+body {
+  max-height: 100vh;
+}
+
+body main {
+  height: 90vh;
+}
+
+body main .main-container {
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 34%, 20% 100%, 0 100%, 0 51%);
+          clip-path: polygon(0 0, 100% 0, 100% 34%, 20% 100%, 0 100%, 0 51%);
+  background-color: #1c79e3;
 }
 /*# sourceMappingURL=main.css.map */
