@@ -18,7 +18,7 @@ a {
 
 header {
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   background-color: #104581;
   position: relative;
   -webkit-box-orient: vertical;
@@ -28,10 +28,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: white 1px solid;
 }
 
 header .head-container {
-  height: 6vh;
+  height: 100%;
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -55,8 +56,8 @@ header .head-container .logo img {
 
 header .nav {
   width: 100%;
-  height: 4vh;
-  position: absolute;
+  height: 40%;
+  position: relative;
   bottom: 0;
   padding-bottom: 5px;
   display: -webkit-box;
@@ -105,24 +106,32 @@ header .nav li a:hover {
 
 body {
   max-height: 100vh;
+  background: #1c79e3;
 }
 
 body main {
-  height: 90vh;
+  height: 80vh;
+  position: relative;
 }
 
 body main .main-container {
+  position: relative;
   height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 34%, 20% 100%, 0 100%, 0 51%);
-          clip-path: polygon(0 0, 100% 0, 100% 34%, 20% 100%, 0 100%, 0 51%);
-  background-color: #1c79e3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/images/clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 body main .main-container .search-container {
@@ -169,6 +178,11 @@ body main .main-container .search-container .forms button {
   cursor: pointer;
 }
 
+body main .main-container .search-container .forms button:hover {
+  background: #1458a5;
+  border-color: #1458a5;
+}
+
 body main .main-container .search-container .choices {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -180,5 +194,72 @@ body main .main-container .search-container .choices {
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+body main .main-container .output-container {
+  border: 1px white solid;
+  width: 80%;
+  color: white;
+  height: 400px;
+  margin-top: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  background-color: #5894da;
+}
+
+body main .main-container .output-container .weather {
+  border: 1px white solid;
+  border-radius: 15px;
+  position: absolute;
+  margin-top: 30px;
+  width: 250px;
+  height: 150px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .main-container .output-container .weather h5 {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+body main .main-container .output-container .location {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+}
+
+body main .main-container .output-container .info1,
+body main .main-container .output-container .info2,
+body main .main-container .output-container .info3 {
+  border: 1px white solid;
+  border-radius: 15px;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+body main .main-container .output-container .info1 {
+  margin-left: 10px;
+  left: 0;
+}
+
+body main .main-container .output-container .info3 {
+  margin-right: 10px;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */

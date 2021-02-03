@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherToday</title>
-    <link rel="stylesheet" href="/scss/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="head-container">
-            <div class="logo">
-                <img src="/images/Logo.svg" alt="">
-            </div>
+      <div class="head-container">
+        <div class="logo">
+          <img src="/images/Logo.svg" alt="" />
         </div>
+      </div>
 
-        <div class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Weather</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-
-            </ul>
-        </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Weather</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-        <div class="main-container">
+      <div class="main-container">
+        <div class="search-container">
+          <div class="forms">
+            <form action="">
+              <input type="text" placeholder="Search..." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="choices">
+            <label class="container"
+              >Only weather
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
 
-            <div class="search-container">
-                <div class="forms">
-                    <form action="">
-                        <input type="text" placeholder="Search..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="choices">
-                    <label class="container">Only weather
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                      
-                      <label class="container">Only attractions
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
-                      
-                      <label class="container">Fliter alphabetically
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
-                </div>
-            </div>
+            <label class="container"
+              >Only attractions
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container"
+              >Fliter alphabetically
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
         </div>
+
+        <div class="output-container">
+          <div class="location">
+            <h1>Halmstad</h1>
+          </div>
+
+          <div class="info1"></div>
+          <div class="info2"></div>
+          <div class="info3"></div>
+
+          <div class="weather">
+            <h5>Thursday</h5>
+            <h5>Tempature -3C</h5>
+            <h5>Conditions:</h5>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
