@@ -88,7 +88,7 @@ header .nav li a {
   color: #fff;
   margin-top: 10px;
   background: #1c79e3;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   border-radius: 10px;
   width: 40%;
@@ -145,6 +145,7 @@ body main .main-container .search-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -227,12 +228,13 @@ body main .main-container .output-container .weather {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body main .main-container .output-container .weather h5 {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 10px;
+  font-size: 15px;
 }
 
 body main .main-container .output-container .location {
