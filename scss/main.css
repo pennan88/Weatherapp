@@ -18,7 +18,7 @@ a {
 
 header {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background-color: #104581;
   position: relative;
   -webkit-box-orient: vertical;
@@ -52,56 +52,6 @@ header .head-container .logo {
 
 header .head-container .logo img {
   width: 300px;
-}
-
-header .nav {
-  width: 100%;
-  height: 40%;
-  position: relative;
-  bottom: 0;
-  padding-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .nav ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header .nav li {
-  display: inline;
-  margin: 0 100px;
-}
-
-header .nav li a {
-  padding: 5px 10px;
-  color: #fff;
-  margin-top: 10px;
-  background: #1c79e3;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 10px;
-  width: 40%;
-  border: 1px solid #1c79e3;
-  border-width: 1px 1px 3px;
-  margin-bottom: 10px;
-  -webkit-transition: 0.4s background-color;
-  transition: 0.4s background-color;
-}
-
-header .nav li a:hover {
-  background: #1458a5;
-  border-color: #1458a5;
 }
 
 body {
@@ -214,6 +164,18 @@ body main .main-container .output-container {
   background-color: #5894da;
 }
 
+body main .main-container .output-container .testdiv {
+  width: 30%;
+  height: 30px;
+  position: absolute;
+  bottom: 175px;
+  text-align: center;
+}
+
+body main .main-container .output-container .testdiv h5 {
+  font-size: 20px;
+}
+
 body main .main-container .output-container .weather {
   border: 1px white solid;
   border-radius: 15px;
@@ -230,6 +192,8 @@ body main .main-container .output-container .weather {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
 }
 
 body main .main-container .output-container .weather h5 {
@@ -252,7 +216,19 @@ body main .main-container .output-container .info3 {
   width: 250px;
   height: 150px;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+  font-size: 20px;
 }
 
 body main .main-container .output-container .info1 {
