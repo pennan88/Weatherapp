@@ -222,9 +222,9 @@ body main .main-container .output-container .location {
   margin-left: 10px;
 }
 
-body main .main-container .output-container .info1,
-body main .main-container .output-container .info2,
-body main .main-container .output-container .info3 {
+body main .main-container .output-container .info_card1,
+body main .main-container .output-container .info_card2,
+body main .main-container .output-container .info_card3 {
   border-radius: 10px;
   position: absolute;
   width: 250px;
@@ -240,17 +240,17 @@ body main .main-container .output-container .info3 {
   font-weight: bold;
 }
 
-body main .main-container .output-container .info1 {
+body main .main-container .output-container .info_card1 {
   margin-left: 10px;
   left: 0;
 }
 
-body main .main-container .output-container .info1 #info_location1 {
+body main .main-container .output-container .info_card1 #card_location1 {
   height: 25px;
   padding: 5px 0;
 }
 
-body main .main-container .output-container .info1 #inner_info1 {
+body main .main-container .output-container .info_card1 #inner_card1 {
   background-color: #eefaff;
   height: 100px;
   font-size: 18px;
@@ -265,12 +265,12 @@ body main .main-container .output-container .info1 #inner_info1 {
           align-items: center;
 }
 
-body main .main-container .output-container .info2 #info_location2 {
+body main .main-container .output-container .info_card2 #card_location2 {
   height: 25px;
   padding: 5px 0;
 }
 
-body main .main-container .output-container .info2 #inner_info2 {
+body main .main-container .output-container .info_card2 #inner_card2 {
   background-color: #eefaff;
   height: 100px;
   font-size: 18px;
@@ -285,17 +285,17 @@ body main .main-container .output-container .info2 #inner_info2 {
           align-items: center;
 }
 
-body main .main-container .output-container .info3 {
+body main .main-container .output-container .info_card3 {
   margin-right: 10px;
   right: 0;
 }
 
-body main .main-container .output-container .info3 #info_location3 {
+body main .main-container .output-container .info_card3 #card_location3 {
   height: 25px;
   padding: 5px 0;
 }
 
-body main .main-container .output-container .info3 #inner_info3 {
+body main .main-container .output-container .info_card3 #inner_card3 {
   background-color: #eefaff;
   height: 100px;
   font-size: 18px;
