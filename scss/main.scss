@@ -115,7 +115,7 @@ body {
         border: 1px white solid;
         width: 80%;
         color: white;
-        height: 400px;
+        height: 500px;
         margin-top: 40px;
         position: relative;
         display: flex;
@@ -134,21 +134,42 @@ body {
           }
         }
 
-        .weather {
-          border: 1px white solid;
-          border-radius: 15px;
-          position: absolute;
-          margin-top: 30px;
+        .weather-container {
+          margin-top: 10px;
+          height: 280px;
           width: 250px;
-          height: 150px;
-          flex-direction: column;
-          display: flex;
-          justify-content: space-around;
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+          border-radius: 10px;
+          background-color: white;
+          text-align: center;
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
 
-          h5 {
-            margin-left: 10px;
+          #Day {
             font-size: 15px;
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 20px;
+          }
+
+          .weather {
+            margin-top: 10px;
+            background-color: #eefaff;
+            height: 200px;
+            font-size: 18px;
+
+            #Weather_img {
+              padding-top: 10px;
+              img {
+                width: 75px;
+              }
+            }
+
+            #Temp {
+              padding-top: 20px;
+            }
           }
         }
 
@@ -161,28 +182,72 @@ body {
         .info1,
         .info2,
         .info3 {
-          border: 1px white solid;
-          border-radius: 15px;
+          border-radius: 10px;
           position: absolute;
           width: 250px;
           height: 150px;
           bottom: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           margin-bottom: 10px;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
           font-size: 20px;
+          background-color: white;
+          color: black;
+          text-align: center;
+          font-weight: bold;
         }
 
         .info1 {
           margin-left: 10px;
           left: 0;
+
+          #info_location1 {
+            height: 25px;
+            padding: 5px 0;
+          }
+
+          #inner_info1 {
+            background-color: #eefaff;
+            height: 100px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .info2 {
+          #info_location2 {
+            height: 25px;
+            padding: 5px 0;
+          }
+
+          #inner_info2 {
+            background-color: #eefaff;
+            height: 100px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
         }
 
         .info3 {
           margin-right: 10px;
           right: 0;
+
+          #info_location3 {
+            height: 25px;
+            padding: 5px 0;
+          }
+
+          #inner_info3 {
+            background-color: #eefaff;
+            height: 100px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
         }
       }
     }

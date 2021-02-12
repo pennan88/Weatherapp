@@ -151,7 +151,7 @@ body main .main-container .output-container {
   border: 1px white solid;
   width: 80%;
   color: white;
-  height: 400px;
+  height: 500px;
   margin-top: 40px;
   position: relative;
   display: -webkit-box;
@@ -176,29 +176,44 @@ body main .main-container .output-container .testdiv h5 {
   font-size: 20px;
 }
 
-body main .main-container .output-container .weather {
-  border: 1px white solid;
-  border-radius: 15px;
-  position: absolute;
-  margin-top: 30px;
+body main .main-container .output-container .weather-container {
+  margin-top: 10px;
+  height: 280px;
   width: 250px;
-  height: 150px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-body main .main-container .output-container .weather h5 {
-  margin-left: 10px;
+body main .main-container .output-container .weather-container #Day {
   font-size: 15px;
+}
+
+body main .main-container .output-container .weather-container p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body main .main-container .output-container .weather-container .weather {
+  margin-top: 10px;
+  background-color: #eefaff;
+  height: 200px;
+  font-size: 18px;
+}
+
+body main .main-container .output-container .weather-container .weather #Weather_img {
+  padding-top: 10px;
+}
+
+body main .main-container .output-container .weather-container .weather #Weather_img img {
+  width: 75px;
+}
+
+body main .main-container .output-container .weather-container .weather #Temp {
+  padding-top: 20px;
 }
 
 body main .main-container .output-container .location {
@@ -210,12 +225,35 @@ body main .main-container .output-container .location {
 body main .main-container .output-container .info1,
 body main .main-container .output-container .info2,
 body main .main-container .output-container .info3 {
-  border: 1px white solid;
-  border-radius: 15px;
+  border-radius: 10px;
   position: absolute;
   width: 250px;
   height: 150px;
   bottom: 0;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+body main .main-container .output-container .info1 {
+  margin-left: 10px;
+  left: 0;
+}
+
+body main .main-container .output-container .info1 #info_location1 {
+  height: 25px;
+  padding: 5px 0;
+}
+
+body main .main-container .output-container .info1 #inner_info1 {
+  background-color: #eefaff;
+  height: 100px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,19 +263,50 @@ body main .main-container .output-container .info3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
-  font-size: 20px;
 }
 
-body main .main-container .output-container .info1 {
-  margin-left: 10px;
-  left: 0;
+body main .main-container .output-container .info2 #info_location2 {
+  height: 25px;
+  padding: 5px 0;
+}
+
+body main .main-container .output-container .info2 #inner_info2 {
+  background-color: #eefaff;
+  height: 100px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .main-container .output-container .info3 {
   margin-right: 10px;
   right: 0;
+}
+
+body main .main-container .output-container .info3 #info_location3 {
+  height: 25px;
+  padding: 5px 0;
+}
+
+body main .main-container .output-container .info3 #inner_info3 {
+  background-color: #eefaff;
+  height: 100px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
