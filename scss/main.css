@@ -28,7 +28,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: white 1px solid;
+  border-bottom: black 1px solid;
 }
 
 header .head-container {
@@ -56,7 +56,7 @@ header .head-container .logo img {
 
 body {
   max-height: 100vh;
-  background: #1c79e3;
+  background: #1d6bc5;
 }
 
 body main {
@@ -79,17 +79,17 @@ body main .main-container {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("/images/clouds.png");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1300px;
 }
 
 body main .main-container .search-container {
   margin-top: 30px;
   width: 35%;
   border: 1px white solid;
-  border-radius: 15px;
-  background-color: #5894da;
+  border-radius: 10px;
+  background-color: white;
   position: relative;
   height: 200px;
   display: -webkit-box;
@@ -100,6 +100,8 @@ body main .main-container .search-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
 }
 
 body main .main-container .search-container form {
@@ -116,15 +118,21 @@ body main .main-container .search-container .forms {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
+}
+
+body main .main-container .search-container .forms #mySearch {
+  width: 200px;
+  height: 30px;
 }
 
 body main .main-container .search-container .forms button {
   float: right;
   padding: 6px 10px;
-  background: #1c79e3;
-  font-size: 10px;
+  background: #1d6bc5;
+  font-size: 15px;
   border: none;
   cursor: pointer;
 }
@@ -142,14 +150,17 @@ body main .main-container .search-container .choices {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 140px;
+  background-color: #e4edf0;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 body main .main-container .output-container {
-  border: 1px white solid;
-  width: 80%;
+  width: 60%;
   color: white;
   height: 500px;
   margin-top: 40px;
@@ -161,7 +172,7 @@ body main .main-container .output-container {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 15px;
-  background-color: #5894da;
+  background-color: rgba(255, 255, 255, 0.062);
 }
 
 body main .main-container .output-container .testdiv {
@@ -199,9 +210,13 @@ body main .main-container .output-container .weather-container p {
 
 body main .main-container .output-container .weather-container .weather {
   margin-top: 10px;
-  background-color: #eefaff;
+  background-color: #e4edf0;
   height: 200px;
   font-size: 18px;
+}
+
+body main .main-container .output-container .weather-container .weather #tempicon {
+  width: 20px;
 }
 
 body main .main-container .output-container .weather-container .weather #Weather_img {
@@ -251,7 +266,7 @@ body main .main-container .output-container .info_card1 #card_location1 {
 }
 
 body main .main-container .output-container .info_card1 #inner_card1 {
-  background-color: #eefaff;
+  background-color: #e4edf0;
   height: 100px;
   font-size: 18px;
   display: -webkit-box;
@@ -271,7 +286,7 @@ body main .main-container .output-container .info_card2 #card_location2 {
 }
 
 body main .main-container .output-container .info_card2 #inner_card2 {
-  background-color: #eefaff;
+  background-color: #e4edf0;
   height: 100px;
   font-size: 18px;
   display: -webkit-box;
@@ -296,7 +311,7 @@ body main .main-container .output-container .info_card3 #card_location3 {
 }
 
 body main .main-container .output-container .info_card3 #inner_card3 {
-  background-color: #eefaff;
+  background-color: #e4edf0;
   height: 100px;
   font-size: 18px;
   display: -webkit-box;

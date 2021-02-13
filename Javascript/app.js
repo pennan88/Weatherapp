@@ -23,6 +23,7 @@ button.addEventListener("click", () => {
 });
 
 let day = document.getElementById("Day");
+
 let DateNum = new Date();
 let NumtoDate = new Array(7);
 NumtoDate[0] = "Sunday";

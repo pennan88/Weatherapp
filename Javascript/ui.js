@@ -3,7 +3,7 @@
 const OutputTemp = document.querySelector("#Temp");
 const OutputName = document.querySelector("#hstad");
 const OutputCond = document.querySelector("#Cond");
-const WeatherIcon = document.querySelector("#Weather_icon");
+const icon = document.querySelector("#icon");
 const OutputLocation = document.querySelector("#location");
 
 const cardwindow1 = document.querySelector("#card_location1");
@@ -20,6 +20,12 @@ class WeatherUI {
     OutputTemp.innerHTML = `${WeatherData.main.temp}° C`;
     OutputCond.innerHTML = `${WeatherData.weather[0].description}`;
     OutputLocation.innerHTML = `${WeatherData.name}, ${WeatherData.sys.country}`;
+
+    if (WeatherData.main.temp < 0) {
+      icon.src = "images/snowflake.svg";
+    } else {
+      icon.src = "/images/sunny.svg";
+    }
   }
 }
 
