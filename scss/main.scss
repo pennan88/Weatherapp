@@ -10,6 +10,7 @@
 
 html,
 body {
+  height: 100%;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -56,7 +57,7 @@ body {
 
     .main-container {
       position: relative;
-      height: 100%;
+      height: 90vh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -127,11 +128,12 @@ body {
         // border: 1px white solid;
         width: 60%;
         color: white;
-        height: 500px;
+        height: 1000px;
         margin-top: 40px;
         position: relative;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.062);
 
@@ -148,6 +150,7 @@ body {
 
         .weather-container {
           margin-top: 10px;
+          position: relative;
           height: 280px;
           width: 250px;
           border-radius: 10px;
