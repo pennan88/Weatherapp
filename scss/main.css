@@ -55,12 +55,12 @@ header .head-container .logo img {
 }
 
 body {
-  max-height: 100vh;
+  height: 100vh;
   background: #1d6bc5;
 }
 
 body main {
-  height: 80vh;
+  height: 89vh;
   position: relative;
 }
 
@@ -86,7 +86,7 @@ body main .main-container {
 
 body main .main-container .search-container {
   margin-top: 30px;
-  width: 35%;
+  width: 500px;
   border: 1px white solid;
   border-radius: 10px;
   background-color: white;
@@ -156,35 +156,27 @@ body main .main-container .search-container .choices {
   background-color: #e4edf0;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body main .main-container .output-container {
-  width: 60%;
+  width: 80%;
   color: white;
-  height: 500px;
+  height: 760px;
   margin-top: 40px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.062);
-}
-
-body main .main-container .output-container .testdiv {
-  width: 30%;
-  height: 30px;
-  position: absolute;
-  bottom: 175px;
-  text-align: center;
-}
-
-body main .main-container .output-container .testdiv h5 {
-  font-size: 20px;
 }
 
 body main .main-container .output-container .weather-container {
@@ -241,14 +233,14 @@ body main .main-container .output-container .info_card1,
 body main .main-container .output-container .info_card2,
 body main .main-container .output-container .info_card3 {
   border-radius: 10px;
-  position: absolute;
-  width: 250px;
+  position: relative;
+  width: 200px;
   height: 150px;
   bottom: 0;
   margin-bottom: 10px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
-  font-size: 20px;
+  font-size: 18px;
   background-color: white;
   color: black;
   text-align: center;
@@ -256,8 +248,7 @@ body main .main-container .output-container .info_card3 {
 }
 
 body main .main-container .output-container .info_card1 {
-  margin-left: 10px;
-  left: 0;
+  margin-top: 20px;
 }
 
 body main .main-container .output-container .info_card1 #card_location1 {
@@ -300,11 +291,6 @@ body main .main-container .output-container .info_card2 #inner_card2 {
           align-items: center;
 }
 
-body main .main-container .output-container .info_card3 {
-  margin-right: 10px;
-  right: 0;
-}
-
 body main .main-container .output-container .info_card3 #card_location3 {
   height: 25px;
   padding: 5px 0;
@@ -323,5 +309,35 @@ body main .main-container .output-container .info_card3 #inner_card3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 820px) {
+  body main .main-container .output-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .main-container .output-container .weather-container {
+    position: absolute;
+    top: 0;
+  }
+  body main .main-container .output-container .info_card1,
+  body main .main-container .output-container .info_card2,
+  body main .main-container .output-container .info_card3 {
+    position: absolute;
+  }
+  body main .main-container .output-container .info_card1 {
+    left: 0;
+  }
+  body main .main-container .output-container .info_card3 {
+    right: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

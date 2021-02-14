@@ -47,11 +47,11 @@ header {
 // Hero section
 
 body {
-  max-height: 100vh;
+  height: 100vh;
   background: map-get($colors, primary);
 
   main {
-    height: 80vh;
+    height: 89vh;
     position: relative;
 
     .main-container {
@@ -68,7 +68,7 @@ body {
 
       .search-container {
         margin-top: 30px;
-        width: 35%;
+        width: 500px;
         border: 1px white solid;
         border-radius: 10px;
         background-color: map-get($colors, cardmain);
@@ -119,32 +119,22 @@ body {
           background-color: map-get($colors, cardsecondary);
           color: black;
           font-weight: bold;
-          font-size: 20px;
+          font-size: 16px;
         }
       }
 
       .output-container {
         // border: 1px white solid;
-        width: 60%;
+        width: 80%;
         color: white;
-        height: 500px;
+        height: 760px;
         margin-top: 40px;
         position: relative;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0.062);
-
-        .testdiv {
-          width: 30%;
-          height: 30px;
-          position: absolute;
-          bottom: 175px;
-          text-align: center;
-          h5 {
-            font-size: 20px;
-          }
-        }
 
         .weather-container {
           margin-top: 10px;
@@ -198,13 +188,13 @@ body {
         .info_card2,
         .info_card3 {
           border-radius: 10px;
-          position: absolute;
-          width: 250px;
+          position: relative;
+          width: 200px;
           height: 150px;
           bottom: 0;
           margin-bottom: 10px;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.39);
-          font-size: 20px;
+          font-size: 18px;
           background-color: map-get($colors, cardmain);
           color: black;
           text-align: center;
@@ -212,9 +202,7 @@ body {
         }
 
         .info_card1 {
-          margin-left: 10px;
-          left: 0;
-
+          margin-top: 20px;
           #card_location1 {
             height: 25px;
             padding: 5px 0;
@@ -247,9 +235,6 @@ body {
         }
 
         .info_card3 {
-          margin-right: 10px;
-          right: 0;
-
           #card_location3 {
             height: 25px;
             padding: 5px 0;
@@ -262,6 +247,39 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  body {
+    main {
+      .main-container {
+        .output-container {
+          flex-direction: row;
+          display: flex;
+          justify-content: center;
+
+          .weather-container {
+            position: absolute;
+            top: 0;
+          }
+
+          .info_card1,
+          .info_card2,
+          .info_card3 {
+            position: absolute;
+          }
+
+          .info_card1 {
+            left: 0;
+          }
+
+          .info_card3 {
+            right: 0;
           }
         }
       }
