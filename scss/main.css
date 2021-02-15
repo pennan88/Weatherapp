@@ -163,7 +163,7 @@ body main .main-container .search-container .choices {
 body main .main-container .output-container {
   width: 80%;
   color: white;
-  height: 1000px;
+  height: 800px;
   margin-top: 40px;
   position: relative;
   display: -webkit-box;
